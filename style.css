@@ -26,6 +26,16 @@ img {
   display: block;
 }
 
+.pink-link {
+  padding: 10px 40px;
+  background: var(--pink);
+  color: var(--pale-blue);
+  font-weight: 600;
+  margin-top: 30px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
 .wrapper {
   padding-left: 20px;
   padding-right: 20px;
@@ -59,15 +69,6 @@ img {
 }
 .intro-paragraph {
   font-size: 13px;
-}
-.intro-link {
-  padding: 10px 40px;
-  background: var(--pink);
-  color: var(--pale-blue);
-  font-weight: 600;
-  margin-top: 30px;
-  font-size: 14px;
-  border-radius: 20px;
 }
 .intro-image {
   width: 100%;
@@ -122,4 +123,13 @@ img {
 }
 .section-paragraph {
   font-size: 12px;
+}
+
+.end-section {
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.end-section-title {
+  font-family: var(--poppins);
 }
