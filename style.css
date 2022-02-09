@@ -25,6 +25,14 @@ img {
   margin: 0;
   display: block;
 }
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 0;
+  display: inline-block;
+}
 
 .pink-link {
   padding: 10px 40px;
@@ -132,4 +140,78 @@ img {
 }
 .end-section-title {
   font-family: var(--poppins);
+}
+
+.footer {
+  background: var(--dark-cyan);
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter-title {
+  margin: 0;
+}
+.newsletter-paragraph {
+  font-size: 13px;
+}
+.newsletter-input {
+  width: 100%;
+  outline: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+.newsletter-button {
+  background: var(--pink);
+  border: 0;
+  font-family: inherit;
+  color: inherit;
+  font-weight: 600;
+  margin-left: auto;
+  cursor: pointer;
+  padding: 8px 25px;
+  margin-top: 14px;
+  border-radius: 6px;
+}
+
+.company {
+  margin-top: 60px;
+}
+.company-logo {
+  transform: scale(0.7);
+  transform-origin: left;
+}
+.company-logo path {
+  fill: white;
+}
+.company-paragraph {
+  font-size: 13px;
+}
+
+.contact-item {
+  display: flex;
+  font-size: 13px;
+}
+.contact-icon {
+  width: 15px;
+  object-fit: contain;
+}
+.contact-detail {
+  margin-left: 16px;
+}
+
+.sosmed {
+  margin-top: 40px;
+}
+.sosmed-button + .sosmed-button {
+  margin-left: 10px;
+}
+.sosmed-button ion-icon {
+  font-size: 25px;
+}
+.sosmed-button:hover {
+  color: lightblue;
 }
