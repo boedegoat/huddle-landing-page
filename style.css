@@ -36,23 +36,28 @@ button {
 }
 
 .pink-link {
-  padding: 10px 40px;
+  padding: 0.8em 3em;
   background: var(--pink);
   color: var(--pale-blue);
   font-weight: 600;
   margin-top: 30px;
   font-size: 14px;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 .wrapper {
   padding-left: 20px;
   padding-right: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.header .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,9 +90,11 @@ button {
 }
 
 .stats {
+  padding-bottom: 60px;
+}
+.stats .wrapper {
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
 }
 .stats-item {
   display: flex;
@@ -125,6 +132,10 @@ button {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.section .wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .section-title {
   font-family: var(--poppins);
   font-size: 22px;
@@ -161,9 +172,13 @@ button {
 }
 .newsletter-input {
   width: 100%;
+  border: none;
   outline: none;
   padding: 8px 14px;
   border-radius: 8px;
+}
+.newsletter-input:focus {
+  outline: 2px solid var(--light-pink);
 }
 .newsletter-button {
   background: var(--pink);
@@ -215,4 +230,105 @@ button {
 }
 .sosmed-link:hover {
   color: lightblue;
+}
+
+@media screen and (min-width: 1024px) {
+  .pink-link {
+    font-size: 16px;
+  }
+  .wrapper {
+    max-width: 64rem;
+  }
+
+  .intro-title {
+    font-size: 35px;
+  }
+  .intro-paragraph {
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+  .intro-image {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stats .wrapper {
+    flex-direction: row;
+  }
+  .stats-item + .stats-item {
+    margin-top: 0;
+  }
+  .stats-number {
+    font-size: 60px;
+  }
+  .stats-label {
+    font-size: 18px;
+  }
+
+  .section {
+    text-align: left;
+  }
+
+  .section.img-right .section-image {
+    order: 2;
+  }
+  .section.img-right .section-content {
+    margin-right: 60px;
+  }
+
+  .section.img-left .section-content {
+    margin-left: 60px;
+  }
+
+  .section .wrapper {
+    flex-direction: row;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+  .section-paragraph {
+    font-size: 15px;
+  }
+  .section-image {
+    max-width: 50%;
+  }
+
+  .end-section {
+    padding-top: 60px;
+  }
+  .end-section-title {
+    font-size: 35px;
+  }
+
+  .footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-details {
+    max-width: 300px;
+    margin-right: 200px;
+  }
+  .newsletter {
+    order: 2;
+  }
+  .newsletter-paragraph {
+    max-width: 300px;
+  }
+  .newsletter-form {
+    display: flex;
+    align-items: center;
+  }
+  .newsletter-input {
+    min-width: 250px;
+  }
+  .newsletter-button {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .company {
+    margin-top: 0;
+  }
 }
